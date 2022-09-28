@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/imagen-p.png" type="image/png">
+
+        <source media="(max-width: 1050px )" srcset="Imagens/imagem-m.png" type="image/png">
+
+        <img src="imagens/imagem-g.png" alt="imagem flexicivel">
+
+    </picture>
+
+<h1>Reproduzindo áudio</h1>
+<p>Aprendendo a adicionar áudios com o HTML5</p>
+
+<!--Tipos de extensões de áudios: MP3(MPEG) + wav + OGG-->
+
+<audio preload="metadata" controls>
+<source src="media/audio1.mp3" type="audio/mpeg">
+<source src="media/audio1.wav" type="audio/wav">
+<source src="media/audio1.ogg" type="audio/ogg">
+
+<p>Infelizmente seu navegador não consegue baixar áudio</p>
+<a href="media/audio1.mp3">Clique aqui para fazer o download</a>
+</audio>
+
+</body>
+</html>
